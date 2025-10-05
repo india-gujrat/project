@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Responsive Food Delivery Services Version 2</title>
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!-- Logo -->
+        <h1 class="logo">Specific</h1>
+
+        <!-- List of menus -->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+        </div>
+
+        <!-- Logout -->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <!-- main content area -->
+    <div class="main">
+
+        <!-- main navbar -->
+        <div class="main-navbar">
+            <!-- menu when appear on mobile version -->
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+
+            <!-- search bar -->
+            <div class="search">
+                <input type="text" placeholder="What you want to eat?">
+                <button class="search-btn">Search</button>
+            </div>
+
+            <!-- profile icon on right side of navbar -->
+            <div class="profile">
+                <a class="cart" href="#">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+                <a class="user" href="#">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <!-- main highlight section (Recommendations) -->
+        <div class="main-highlight">
+            <!-- title section and arrow -->
+            <div class="main-header">
+                <h2 class="main-title">Recommendations</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- highlight menu / cards -->
+                            <div class="food-card">
+                    <img src="./images/dosa.jfif" alt="Cold Soda">
+                    <div class="food-card-desc">
+                        <h3>Dosa</h3>
+                        <p>Refreshing Dosa,</p>
+                        <div class="food-card-bottom">
+                            <span>₹60</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Food Card 4 -->
+                <div class="food-card">
+                    <img src="./images/samosa.jpg" alt="Chocolate Cake">
+                    <div class="food-card-desc">
+                        <h3>samosa</h3>
+                        <p>Rich and decadent samosa.</p>
+                        <div class="food-card-bottom">
+                            <span>₹20</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more food cards as needed -->
+                 <div class="food-card">
+                    <img src="./images/khMN.jpg" alt="French Fries">
+                    <div class="food-card-desc">
+                        <h3>Khaman</h3>
+                        <p>soft Khaman.</p>
+                        <div class="food-card-bottom">
+                            <span>₹50</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                 <div class="food-card">
+                    <img src="./images/biryani.jpg" alt="Spicy Noodles">
+                    <div class="food-card-desc">
+                        <h3>Biryani</h3>
+                        <p>hyderabadi Biryani.</p>
+                        <div class="food-card-bottom">
+                            <span>₹150</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Closes .main -->
+                <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="./images/salad.jpg" alt="Fresh Salad">
+                    <div class="highlight-desc">
+                        <h4>Fresh Salad</h4>
+                        <p>₹15</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <!-- Corrected structure for Cafe Latte card -->
+                    <img class="highlight-img" src="./images/chai.webp" alt="Cafe Latte">
+                    <div class="highlight-desc">
+                        <h4>chai</h4>
+                        <p>₹10</p>
+                    </div>
+                </div>
+                <!-- Add more highlight cards as needed -->
+                <div class="highlight-card">
+                    <img class="highlight-img" src="./images/sandwich.jpg" alt="Club Sandwich">
+                    <div class="highlight-desc">
+                        <h4>Club Sandwich</h4>
+                        <p>₹190</p>
+                    </div>
+                </div>
+                 <div class="highlight-card">
+                    <img class="highlight-img" src="./images/orange.jpg" alt="Orange Juice">
+                    <div class="highlight-desc">
+                        <h4>Orange Juice</h4>
+                        <p>₹30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Menus / Order Section -->
+        <div class="main-menus">
+            <div class="filter-section">
+                <h2 class="main-title">Menu <br> Category</h2>
+                <div class="filter-arrows"> <!-- Grouping arrows for better styling/JS targeting -->
+                    <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                <!-- Filter buttons/categories -->
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Burgers</button>
+                <button class="filter-btn">Pizza</button>
+                <button class="filter-btn">Drinks</button>
+                <button class="filter-btn">Desserts</button>
+                <button class="filter-btn">Appetizers</button>
+                <button class="filter-btn">Noodles</button>
+            </div>
+
+            <!-- Actual Food Items/Cards Section -->
+            <div class="food-items-section">
+                <!-- Example Food Card 1 -->
+                <div class="food-card">
+                    <img src="./images/burg.avif" alt="Delicious Burger">
+                    <div class="food-card-desc">
+                        <h3>Delicious Burger</h3>
+                        <p>A classic burger with fresh ingredients.</p>
+                        <div class="food-card-bottom">
+                            <span>₹250</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Food Card 2 -->
+                <div class="food-card">
+                    <img src="images/pizza.webp" alt="Pepperoni Pizza">
+                    <div class="food-card-desc">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Classic pepperoni with extra cheese.</p>
+                        <div class="food-card-bottom">
+                            <span>₹135</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Food Card 3 -->
+
+    <!-- Ionicons Script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Your Custom JavaScript -->
+    <script src="food.js"></script>
+</body>
+</html>
+
+
+    
